@@ -1,0 +1,14 @@
+{
+	"image": "cpp-docker",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools-extension-pack",
+				"ms-vscode.cmake-tools",
+				"twxs.cmake",
+				"ms-python.python",
+				"eamodio.gitlens"
+			]
+		}
+	}
+}
