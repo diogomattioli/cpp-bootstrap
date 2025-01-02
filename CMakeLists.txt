@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(project_setup)
+project(cpp-bootstrap)
 
 set(CMAKE_CXX_STANDARD_REQUIRED 20)
 set(CMAKE_CXX_STANDARD 20)
