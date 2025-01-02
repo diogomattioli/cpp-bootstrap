@@ -8,6 +8,8 @@ set(CMAKE_CXX_FLAGS "-Wall -Wpedantic -Wextra -Werror")
 set(CMAKE_CXX_FLAGS_DEBUG "-g3 -fsanitize=address,undefined")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 
+set(CMAKE_PREFIX_PATH "${CMAKE_BINARY_DIR}/${CMAKE_BUILD_TYPE}/generators")
+
 find_package(GTest REQUIRED)
 
 include_directories(include)
