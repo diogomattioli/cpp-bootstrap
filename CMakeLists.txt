@@ -22,4 +22,5 @@ add_executable(${CMAKE_PROJECT_NAME}-tests ${srcs} ${tests})
 target_link_libraries(${CMAKE_PROJECT_NAME}-tests GTest::gtest GTest::gmock)
 
 enable_testing()
+include(GoogleTest)
 gtest_discover_tests(${CMAKE_PROJECT_NAME}-tests)
