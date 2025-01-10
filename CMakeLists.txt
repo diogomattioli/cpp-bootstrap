@@ -20,6 +20,7 @@ add_executable(${CMAKE_PROJECT_NAME} ${srcs})
 file(GLOB tests tests/*.cpp)
 add_executable(${CMAKE_PROJECT_NAME}-tests ${srcs} ${tests})
 target_link_libraries(${CMAKE_PROJECT_NAME}-tests GTest::gtest GTest::gmock)
+target_compile_options(${CMAKE_PROJECT_NAME}-tests PRIVATE -include tests/weak.hpp)
 
 enable_testing()
 include(GoogleTest)
